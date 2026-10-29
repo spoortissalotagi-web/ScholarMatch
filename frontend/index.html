@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ScholarMatch — Scholarship & Government Scheme Eligibility Checker</title>
+  <meta name="description" content="Find the scholarships and government welfare schemes you are eligible for with ScholarMatch. Simple, transparent, student-first eligibility matching." />
+  
+  <!-- Favicon / SVG Icon -->
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Top Official Information Ribbon -->
+  <aside class="top-notice-bar" aria-label="Official portal notification">
+    <span class="badge-official">Govt Welfare Schemes</span>
+    <span>National &amp; State Scholarship Eligibility Portal — Academic Year 2026-27 Demo Portal</span>
+  </aside>
+
+  <!-- Sticky Navbar -->
+  <header class="navbar" role="banner">
+    <div class="container nav-container">
+      <!-- Logo -->
+      <a href="#home" class="brand-link" data-navigate="home" aria-label="ScholarMatch Home">
+        <img src="assets/logo.svg" alt="ScholarMatch Logo" class="brand-logo-img" />
+      </a>
+
+      <!-- Desktop & Mobile Navigation Menu -->
+      <nav role="navigation">
+        <ul class="nav-menu" id="nav-menu-list">
+          <li><a href="#home" class="nav-link active" data-navigate="home">Home</a></li>
+          <li><a href="#checker" class="nav-link" data-navigate="checker">Check Eligibility</a></li>
+          <li><a href="#scholarships" class="nav-link" data-navigate="scholarships">Scholarships</a></li>
+          <li><a href="#dashboard" class="nav-link" data-navigate="dashboard">
+            Dashboard <span class="nav-count-badge nav-bookmark-count">0</span>
+          </a></li>
+          <li><a href="#about" class="nav-link" data-navigate="about">About</a></li>
+          <li><a href="#contact" class="nav-link" data-navigate="contact">Contact</a></li>
+          <li><a href="#admin" class="nav-link" data-navigate="admin" style="color: var(--text-muted); font-size: 0.85rem;">Admin Demo</a></li>
+          <li>
+            <a href="#checker" class="nav-cta-btn" data-navigate="checker">
+              Check My Eligibility
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="main-content" id="main-content-area">
+
+    <!-- ==========================================================================
+         VIEW 1: HOME PAGE
+         ========================================================================== -->
+    <section class="view-section active" id="view-home">
+      <!-- Hero Section -->
+      <div class="hero-section">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <div class="hero-badge-pill">
+              <span class="dot"></span>
+              <span>Central &amp; State Schemes Database Active</span>
+            </div>
+            <h1 class="hero-title">
+              Find Scholarships You’re <span class="highlight">Eligible For</span>
+            </h1>
+            <p class="hero-description">
+              Enter your academic, income, category, and domicile details to instantly discover scholarships and government welfare schemes that match your eligibility.
+            </p>
+            <div class="hero-cta-group">
+              <a href="#checker" class="btn btn-primary" data-navigate="checker">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M9 11l3 3L22 4"></path>
+                  <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                </svg>
+                Check My Eligibility
+              </a>
+              <a href="#scholarships" class="btn btn-secondary" data-navigate="scholarships">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                Explore Scholarships
+              </a>
+            </div>
+
+            <!-- Hero Stats Row -->
+            <div class="hero-stats-row">
+              <div class="stat-item">
+                <span class="stat-number">14+</span>
+                <span class="stat-label">Verified Schemes</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">₹45,000</span>
+                <span class="stat-label">Avg. Annual Aid</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Free Student Tool</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">Instant</span>
+                <span class="stat-label">Rule Evaluation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Vector Illustration -->
+          <div class="hero-visual">
+            <img src="assets/hero-illustration.svg" alt="ScholarMatch Student Eligibility Illustration" class="hero-illustration-img" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Why Use ScholarMatch Section -->
+      <section class="why-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Benefits &amp; Features</span>
+            <h2 class="section-title">Why Use ScholarMatch?</h2>
+            <p class="section-subtitle">
+              We eliminate the friction of searching through government portals and complex gazettes by matching you directly with financial aid programs you qualify for.
+            </p>
+          </div>
+
+          <div class="why-grid">
+            <!-- Card 1 -->
+            <div class="feature-card">
+              <div class="feature-icon-box icon-blue">
+                🎯
+              </div>
+              <h3>Personalized Matching</h3>
+              <p>Find schemes specifically tailored to your income, category, education level, and state domicile.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="feature-card">
+              <div class="feature-icon-box icon-emerald">
+                ⏱️
+              </div>
+              <h3>Save Time</h3>
+              <p>Avoid searching through hundreds of scattered official websites and PDFs manually.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="feature-card">
+              <div class="feature-icon-box icon-amber">
+                ⚡
+              </div>
+              <h3>Simple &amp; Easy</h3>
+              <p>Answer a structured multi-step questionnaire and receive ranked suitability results instantly.</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="feature-card">
+              <div class="feature-icon-box icon-indigo">
+                🎓
+              </div>
+              <h3>Student Friendly</h3>
+              <p>Clear eligibility breakdowns, required document checklists, and application guidelines in one place.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How It Works Section -->
+      <section class="how-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Four Simple Steps</span>
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">
+              From entering your academic details to submitting your application on the official portal.
+            </p>
+          </div>
+
+          <div class="steps-grid">
+            <div class="step-card">
+              <div class="step-number-bubble">01</div>
+              <h3>Enter Details</h3>
+              <p>Provide your academic level, marks, family annual income, social category, and domicile.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-number-bubble">02</div>
+              <h3>Check Eligibility</h3>
+              <p>Our rule engine evaluates your profile against state and central scholarship prerequisites.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-number-bubble">03</div>
+              <h3>View Matches</h3>
+              <p>Browse matched schemes ranked by eligibility score with clear explanations of criteria met.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-number-bubble">04</div>
+              <h3>Apply Directly</h3>
+              <p>Follow our structured document checklist and apply through verified government portals.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Home Action Banner -->
+      <div class="home-cta-banner">
+        <div class="container home-cta-box">
+          <h2>Ready to Check What You’re Eligible For?</h2>
+          <p>It takes less than 2 minutes. Try with your own details or test immediately using our pre-filled sample student profile.</p>
+          <a href="#checker" class="btn btn-secondary" data-navigate="checker">
+            Start Eligibility Check Now →
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         VIEW 2: ELIGIBILITY CHECKER (MULTI-STEP WIZARD)
+         ========================================================================== -->
+    <section class="view-section" id="view-checker">
+      <div class="container checker-container">
+        
+        <div class="wizard-card">
+          <!-- Wizard Header -->
+          <div class="wizard-header">
+            <div class="wizard-top-actions">
+              <div class="wizard-title-group">
+                <h2>Scholarship Eligibility Checker</h2>
+                <p>Complete the 4 steps below to calculate your matching government schemes.</p>
+              </div>
+
+              <!-- Important Demo Feature: Try Sample Profile -->
+              <div class="sample-preset-wrapper">
+                <select id="sample-preset-select" class="form-control" style="width: auto; padding: 0.45rem 0.75rem; font-size: 0.85rem;" title="Select Demo Profile">
+                  <option value="karnataka_obc">Sample: Karnataka OBC UG (78%, ₹2.5L)</option>
+                  <option value="sc_merit">Sample: SC Merit Scholar (84%, ₹1.8L)</option>
+                  <option value="pragati_girl">Sample: Pragati Girl Tech UG (82%, ₹3.2L)</option>
+                </select>
+                <button type="button" class="btn-sample" id="btn-try-sample" title="Click to autofill form with sample student data">
+                  <span>⚡</span> Try Sample Profile
+                </button>
+              </div>
+            </div>
+
+            <!-- Stepper Progress Bar -->
+            <div class="stepper-nav" role="tablist">
+              <button type="button" class="step-indicator active" id="step-indicator-1" data-step="1">
+                <div class="step-indicator-circle">1</div>
+                <div class="step-indicator-title">Personal Info</div>
+              </button>
+              <button type="button" class="step-indicator" id="step-indicator-2" data-step="2">
+                <div class="step-indicator-circle">2</div>
+                <div class="step-indicator-title">Academic Info</div>
+              </button>
+              <button type="button" class="step-indicator" id="step-indicator-3" data-step="3">
+                <div class="step-indicator-circle">3</div>
+                <div class="step-indicator-title">Financial Details</div>
+              </button>
+              <button type="button" class="step-indicator" id="step-indicator-4" data-step="4">
+                <div class="step-indicator-circle">4</div>
+                <div class="step-indicator-title">Category &amp; Docs</div>
+              </button>
+            </div>
+          </div>
+
+          <!-- Form Body -->
+          <form id="eligibility-form" class="wizard-body" novalidate>
+
+            <!-- STEP 1: PERSONAL INFORMATION -->
+            <div class="form-step-pane active" id="form-step-1">
+              <div class="step-intro-box">
+                <h3>Step 1 — Personal Information</h3>
+                <p>Basic demographic information required to evaluate domicile and age parameters.</p>
+              </div>
+
+              <div class="form-grid">
+                <!-- Name -->
+                <div class="form-group">
+                  <label class="form-label" for="field-name">
+                    Full Student Name <span class="req">*</span>
+                  </label>
+                  <input type="text" id="field-name" class="form-control" placeholder="e.g. Rahul Gowda" required />
+                  <span class="form-hint">Used for results display and personalized matching report.</span>
+                  <div class="form-error-msg"></div>
+                </div>
+
+                <!-- Age -->
+                <div class="form-group">
+                  <label class="form-label" for="field-age">
+                    Age (Years) <span class="req">*</span>
+                  </label>
+                  <input type="number" id="field-age" class="form-control" placeholder="e.g. 20" min="14" max="70" required />
+                  <span class="form-hint">Most collegiate scholarships accept applicants between 16-35.</span>
+                  <div class="form-error-msg"></div>
+                </div>
+
+                <!-- Gender -->
+                <div class="form-group">
+                  <label class="form-label" for="field-gender">
+                    Gender <span class="req">*</span>
+                  </label>
+                  <select id="field-gender" class="form-control" required>
+                    <option value="">-- Select Gender --</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
+                  </select>
+                  <span class="form-hint">Required for women-specific schemes like AICTE Pragati &amp; Begum Hazrat.</span>
+                  <div class="form-error-msg"></div>
+                </div>
+
+                <!-- State -->
+                <div class="form-group">
+                  <label class="form-label" for="field-state">
+                    State of Domicile / Residence <span class="req">*</span>
+                  </label>
+                  <select id="field-state" class="form-control" required>
+                    <option value="">-- Select State --</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="West Bengal">West Bengal</option>
+                    <option value="Other State">Other State / UT</option>
+                  </select>
+                  <span class="form-hint">Identifies whether you qualify for State vs Central government schemes.</span>
+                  <div class="form-error-msg"></div>
+                </div>
+
+                <!-- District -->
+                <div class="form-group">
+                  <label class="form-label" for="field-district">
+                    District <span class="req">*</span>
+                  </label>
+                  <input type="text" id="field-district" class="form-control" placeholder="e.g. Bengaluru Urban, Pune, Mysuru" required />
+                  <div class="form-error-msg"></div>
+                </div>
+
+                <!-- Date of Birth -->
+                <div class="form-group">
+                  <label class="form-label" for="field-dob">
+                    Date of Birth
+                  </label>
+                  <input type="date" id="field-dob" class="form-control" />
+                  <span class="form-hint">Optional demo date of birth field.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- STEP 2: ACADEMIC INFORMATION -->
+            <div class="form-step-pane" id="form-step-2">
+              <div class="step-intro-box">
+                <h3>Step 2 — Academic Information</h3>
+                <p>Details about your current education, course stream, and past academic score.</p>
+              </div>
+
+              <div class="form-grid">
+                <!-- Education Level -->
+                <div class="form-group">
+                  <label class="form-label" for="field-education-level">
+                    Current Education Level <span class="req">*</span>
+                  </label>
+                  <select id="field-education-level" class="form-control" required>
+                    <option value="">-- Select Current Level --</option>
+                    <option value="PUC / 12th">PUC / 12th Standard</option>
+                    <option value="Diploma">Polytechnic / Diploma</option>
+                    <option value="Undergraduate">Undergraduate (B.E, B.Tech, B.Sc, B.Com, etc.)</option>
+                    <option value="Postgraduate">Postgraduate (M.Tech, M.Sc, MBA, etc.)</option>
+                  </select>
+                  <div class="form-error-msg"></div>
+                </div>
+
+                <!-- Course -->
+                <div class="form-group">
+                  <label class="form-label" for="field-course">
+                    Course / Degree Stream <span class="req">*</span>
+                  </label>
+                  <input type="text" id="field-course" class="form-control" placeholder="e.g. B.Tech/B.E, MBBS, B.Sc, Commerce, Polytechnic" required />
+                  <span class="form-hint">Technical/professional courses qualify for AICTE &amp; PMSS schemes.</span>
+                  <div class="form-error-msg"></div>
+                </div>
+
+                <!-- Year of Study -->
+                <div class="form-group">
+                  <label class="form-label" for="field-year-of-study">
+                    Year of Study <span class="req">*</span>
+                  </label>
+                  <select id="field-year-of-study" class="form-control" required>
+                    <option value="">-- Select Current Year --</option>
+                    <option value="1st Year">1st Year / Fresh Admission</option>
+                    <option value="2nd Year">2nd Year</option>
+                    <option value="3rd Year">3rd Year</option>
+                    <option value="4th Year">4th Year / Final Year</option>
+                  </select>
+                  <div class="form-error-msg"></div>
+                </div>
+
+                <!-- Percentage / CGPA -->
+                <div class="form-group">
+                  <label class="form-label" for="field-percentage">
+                    Qualifying Marks (Percentage % or CGPA) <span class="req">*</span>
+                  </label>
+                  <input type="number" id="field-percentage" class="form-control" placeholder="e.g. 78 (or 8.2 for CGPA)" step="0.1" min="0" max="100" required />
+                  <span class="form-hint">If entering CGPA (0-10), it will be converted automatically using standard 9.5x formula.</span>
+                  <div class="form-error-msg"></div>
+                </div>
+
+                <!-- Institution Type -->
+                <div class="form-group col-span-2">
+                  <label class="form-label" for="field-college-type">
+                    College / Institution Type
+                  </label>
+                  <select id="field-college-type" class="form-control">
+                    <option value="Government">Government College / University</option>
+                    <option value="Government-Aided">Government-Aided Private Institution</option>
+                    <option value="Private">Private / Self-Financing College</option>
+                    <option value="Autonomous">Autonomous / Deemed University</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- STEP 3: FAMILY & FINANCIAL INFORMATION -->
+            <div class="form-step-pane" id="form-step-3">
+              <div class="step-intro-box">
+                <h3>Step 3 — Family &amp; Financial Information</h3>
+                <p>Economic indicators required to check means-based thresholds and tuition waivers.</p>
+              </div>
+
+              <div class="form-grid">
+                <!-- Annual Income -->
+                <div class="form-group">
+                  <label class="form-label" for="field-annual-income">
+                    Annual Family Income (in ₹ INR) <span class="req">*</span>
+                  </label>
+                  <input type="number" id="field-annual-income" class="form-control" placeholder="e.g. 250000" min="0" step="1000" required />
+                  <span class="form-hint">E.g., enter 250000 for ₹2.5 Lakhs. Most schemes require &le; ₹2.5L or &le; ₹8L.</span>
+                  <div class="form-error-msg"></div>
+                </div>
+
+                <!-- Income Certificate Available -->
+                <div class="form-group">
+                  <label class="form-label">
+                    Valid Income Certificate Available? <span class="req">*</span>
+                  </label>
+                  <div class="radio-pill-group">
+                    <div class="radio-pill">
+                      <input type="radio" id="inc-yes" name="income-cert" value="yes" checked />
+                      <label for="inc-yes">Yes, Available</label>
+                    </div>
+                    <div class="radio-pill">
+                      <input type="radio" id="inc-no" name="income-cert" value="no" />
+                      <label for="inc-no">No / In Progress</label>
+                    </div>
+                  </div>
+                  <span class="form-hint">Issued by Revenue Authority / Tehsildar with valid RD number.</span>
+                </div>
+
+                <!-- Family Members -->
+                <div class="form-group">
+                  <label class="form-label" for="field-family-members">
+                    Total Family Members Dependent
+                  </label>
+                  <input type="number" id="field-family-members" class="form-control" placeholder="e.g. 4" min="1" max="15" value="4" />
+                </div>
+
+                <!-- Parent Occupation -->
+                <div class="form-group">
+                  <label class="form-label" for="field-parent-occupation">
+                    Parent / Guardian Primary Occupation
+                  </label>
+                  <select id="field-parent-occupation" class="form-control">
+                    <option value="Agriculture / Farming">Agriculture / Farming</option>
+                    <option value="Daily Wage / Labor">Daily Wage / Labor / Artisan</option>
+                    <option value="Salaried Employee">Salaried (Private / Govt)</option>
+                    <option value="Business / Self-Employed">Business / Self-Employed</option>
+                    <option value="Ex-Servicemen / Armed Forces">Ex-Servicemen / Armed Forces (PMSS)</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- STEP 4: CATEGORY & DOCUMENTS -->
+            <div class="form-step-pane" id="form-step-4">
+              <div class="step-intro-box">
+                <h3>Step 4 — Category &amp; Document Readiness</h3>
+                <p>Social category reservation and document verification checklist.</p>
+              </div>
+
+              <div class="form-grid">
+                <!-- Social Category -->
+                <div class="form-group">
+                  <label class="form-label" for="field-category">
+                    Social Category <span class="req">*</span>
+                  </label>
+                  <select id="field-category" class="form-control" required>
+                    <option value="">-- Select Category --</option>
+                    <option value="General">General / Open Merit</option>
+                    <option value="OBC">OBC (Other Backward Classes)</option>
+                    <option value="SC">SC (Scheduled Caste)</option>
+                    <option value="ST">ST (Scheduled Tribe)</option>
+                    <option value="Minority">Minority (Muslim, Christian, Sikh, Buddhist, Jain, Parsi)</option>
+                    <option value="Other">Other Reserved Category</option>
+                  </select>
+                  <div class="form-error-msg"></div>
+                </div>
+
+                <!-- Caste Certificate -->
+                <div class="form-group">
+                  <label class="form-label">
+                    Caste Certificate Available?
+                  </label>
+                  <div class="radio-pill-group">
+                    <div class="radio-pill">
+                      <input type="radio" id="caste-yes" name="caste-cert" value="yes" checked />
+                      <label for="caste-yes">Yes, Available</label>
+                    </div>
+                    <div class="radio-pill">
+                      <input type="radio" id="caste-no" name="caste-cert" value="no" />
+                      <label for="caste-no">No / Not Applicable</label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Domicile Certificate -->
+                <div class="form-group">
+                  <label class="form-label">
+                    Domicile / Residence Certificate Available?
+                  </label>
+                  <div class="radio-pill-group">
+                    <div class="radio-pill">
+                      <input type="radio" id="dom-yes" name="domicile-cert" value="yes" checked />
+                      <label for="dom-yes">Yes, Available</label>
+                    </div>
+                    <div class="radio-pill">
+                      <input type="radio" id="dom-no" name="domicile-cert" value="no" />
+                      <label for="dom-no">No</label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Aadhaar Linked Bank Account -->
+                <div class="form-group">
+                  <label class="form-label">
+                    Aadhaar Linked to Bank Account (DBT)?
+                  </label>
+                  <div class="radio-pill-group">
+                    <div class="radio-pill">
+                      <input type="radio" id="aadh-yes" name="aadhaar-bank" value="yes" checked />
+                      <label for="aadh-yes">Yes (NPCI Seeded)</label>
+                    </div>
+                    <div class="radio-pill">
+                      <input type="radio" id="aadh-no" name="aadhaar-bank" value="no" />
+                      <label for="aadh-no">Not Yet</label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Disability Toggle -->
+                <div class="form-group col-span-2">
+                  <label class="checkbox-card" for="field-disability">
+                    <input type="checkbox" id="field-disability" />
+                    <div class="checkbox-card-info">
+                      <span class="checkbox-card-title">Person with Benchmark Disability (PwD &ge; 40%)</span>
+                      <span class="checkbox-card-desc">Check this if you hold a UDID card or government disability certificate for AICTE Saksham scheme.</span>
+                    </div>
+                  </label>
+                </div>
+
+                <!-- RD / Registration Number (Optional) -->
+                <div class="form-group col-span-2">
+                  <label class="form-label" for="field-reg-number">
+                    Caste / Income RD Certificate Number (Optional)
+                  </label>
+                  <input type="text" id="field-reg-number" class="form-control" placeholder="e.g. RD0038472910 or Ration Card Number" />
+                  <span class="form-hint">Used by state portals (like SSP Karnataka, MahaDBT) to automatically verify records from Revenue servers.</span>
+                </div>
+              </div>
+            </div>
+
+          </form>
+
+          <!-- Wizard Footer Controls -->
+          <div class="wizard-footer">
+            <button type="button" class="btn btn-secondary" id="wizard-btn-prev" style="display: none;">
+              ← Previous Step
+            </button>
+            <span class="step-tracker-text" id="step-tracker-text">Step 1 of 4</span>
+            <div style="display: flex; gap: 0.75rem;">
+              <button type="button" class="btn btn-primary" id="wizard-btn-next">
+                Next Step →
+              </button>
+              <button type="button" class="btn btn-success" id="wizard-btn-submit" style="display: none;">
+                Check My Eligibility 🚀
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         VIEW 3: RESULTS DASHBOARD
+         ========================================================================== -->
+    <section class="view-section" id="view-results">
+      <!-- Results Header Banner -->
+      <div class="results-header-banner">
+        <div class="container">
+          <div class="results-top-title-row">
+            <div>
+              <span class="section-tag">Eligibility Results</span>
+              <h1 id="results-matched-banner-title">Scholarship Matching Dashboard</h1>
+              <p id="results-matched-banner-subtitle">Review your matched schemes with scoring transparency below.</p>
+            </div>
+            <div>
+              <button class="btn btn-secondary btn-sm" onclick="App.navigateTo('checker')">
+                ✏️ Edit Student Details
+              </button>
+            </div>
+          </div>
+
+          <!-- KPI Summary Cards -->
+          <div class="kpi-cards-grid">
+            <div class="kpi-card total">
+              <div class="kpi-card-content">
+                <h4>Total Schemes</h4>
+                <div class="kpi-val" id="kpi-total-checked">0</div>
+              </div>
+              <div class="kpi-icon-pill" style="background: #eff6ff; color: var(--primary);">📋</div>
+            </div>
+
+            <div class="kpi-card eligible">
+              <div class="kpi-card-content">
+                <h4>Fully Eligible</h4>
+                <div class="kpi-val" id="kpi-eligible-count" style="color: var(--success-dark);">0</div>
+              </div>
+              <div class="kpi-icon-pill" style="background: var(--success-light); color: var(--success);">🟢</div>
+            </div>
+
+            <div class="kpi-card potential">
+              <div class="kpi-card-content">
+                <h4>Potential Match</h4>
+                <div class="kpi-val" id="kpi-potential-count" style="color: var(--warning-dark);">0</div>
+              </div>
+              <div class="kpi-icon-pill" style="background: var(--warning-light); color: var(--warning);">🟡</div>
+            </div>
+
+            <div class="kpi-card not-eligible">
+              <div class="kpi-card-content">
+                <h4>Not Eligible</h4>
+                <div class="kpi-val" id="kpi-not-eligible-count" style="color: var(--text-muted);">0</div>
+              </div>
+              <div class="kpi-icon-pill" style="background: var(--danger-light); color: var(--danger);">🔴</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls: Filters, Search & Sorting -->
+      <div class="container">
+        <div class="results-controls-bar">
+          <!-- Search within matches -->
+          <div class="search-input-wrapper">
+            <span class="search-icon-svg">🔍</span>
+            <input type="text" id="results-search-input" placeholder="Filter by scheme name or keywords..." />
+          </div>
+
+          <!-- Status Filter Chips -->
+          <div class="filter-chips-group">
+            <button class="filter-chip results-filter-chip active" data-filter="all">All</button>
+            <button class="filter-chip results-filter-chip" data-filter="eligible">Eligible Only 🟢</button>
+            <button class="filter-chip results-filter-chip" data-filter="potential">Potential 🟡</button>
+            <button class="filter-chip results-filter-chip" data-filter="state-only">State Specific</button>
+            <button class="filter-chip results-filter-chip" data-filter="merit-only">Merit-Based (70%+)</button>
+          </div>
+
+          <!-- Sorting Dropdown -->
+          <div class="sort-select-wrapper">
+            <label for="results-sort-select">Sort by:</label>
+            <select id="results-sort-select">
+              <option value="best-match">Best Match Score</option>
+              <option value="highest-benefit">Highest Benefit Amount</option>
+              <option value="deadline">Application Deadline</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Dynamic Results Cards Grid -->
+        <div class="scholarship-cards-grid" id="results-cards-grid">
+          <!-- Populated dynamically by app.js -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         VIEW 4: SCHOLARSHIPS DIRECTORY (CATALOG)
+         ========================================================================== -->
+    <section class="view-section" id="view-scholarships">
+      <div class="container" style="padding: 3.5rem 0 5rem 0;">
+        <div class="section-header">
+          <span class="section-tag">National &amp; State Schemes Catalog</span>
+          <h2 class="section-title">Explore All Scholarships</h2>
+          <p class="section-subtitle">
+            Browse our complete database of <span id="catalog-total-count">14</span> Central and State welfare assistance programs.
+          </p>
+        </div>
+
+        <!-- Catalog Search and Categories -->
+        <div class="results-controls-bar">
+          <div class="search-input-wrapper">
+            <span class="search-icon-svg">🔍</span>
+            <input type="text" id="catalog-search-input" placeholder="Search scholarships, schemes or categories..." />
+          </div>
+
+          <div class="filter-chips-group">
+            <button class="filter-chip catalog-filter-chip active" data-cat="all">All Categories</button>
+            <button class="filter-chip catalog-filter-chip" data-cat="general">General / EWS</button>
+            <button class="filter-chip catalog-filter-chip" data-cat="obc">OBC</button>
+            <button class="filter-chip catalog-filter-chip" data-cat="sc">SC</button>
+            <button class="filter-chip catalog-filter-chip" data-cat="st">ST</button>
+            <button class="filter-chip catalog-filter-chip" data-cat="minority">Minority</button>
+          </div>
+        </div>
+
+        <!-- Catalog Cards Grid -->
+        <div class="scholarship-cards-grid" id="catalog-cards-grid">
+          <!-- Populated dynamically by app.js -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         VIEW 5: STUDENT DASHBOARD
+         ========================================================================== -->
+    <section class="view-section" id="view-dashboard">
+      <div class="container dashboard-container">
+        
+        <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
+          <span class="section-tag">Student Central</span>
+          <h2 class="section-title">My Dashboard</h2>
+          <p class="section-subtitle">Keep track of your saved scholarships, eligibility profile, and critical deadlines.</p>
+        </div>
+
+        <!-- Dashboard Tabs Navigation -->
+        <div class="dashboard-tabs-nav" role="tablist">
+          <button class="dash-tab-btn active" data-tab="profile">My Profile</button>
+          <button class="dash-tab-btn" data-tab="saved">Saved Scholarships</button>
+          <button class="dash-tab-btn" data-tab="reminders">Application Reminders</button>
+        </div>
+
+        <!-- TAB 1: PROFILE SNAPSHOT -->
+        <div class="dash-tab-pane active" id="dash-pane-profile">
+          <div class="profile-summary-card">
+            <div style="display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+              <div>
+                <h3 id="dash-profile-name" style="font-size: 1.4rem; font-weight: 800; color: var(--text-main);">Guest Student</h3>
+                <p id="dash-profile-subtitle" style="color: var(--text-muted); font-size: 0.92rem;">Profile Details</p>
+              </div>
+              <button class="btn btn-secondary btn-sm" id="btn-edit-profile-checker">
+                ✏️ Re-check / Edit Profile
+              </button>
+            </div>
+
+            <div class="profile-detail-grid" id="dash-profile-stats-grid">
+              <!-- Populated dynamically -->
+            </div>
+
+            <div id="dash-profile-match-banner" style="display: none;"></div>
+          </div>
+        </div>
+
+        <!-- TAB 2: SAVED SCHOLARSHIPS -->
+        <div class="dash-tab-pane" id="dash-pane-saved">
+          <div id="dash-saved-schemes-list">
+            <!-- Populated dynamically -->
+          </div>
+        </div>
+
+        <!-- TAB 3: APPLICATION REMINDERS -->
+        <div class="dash-tab-pane" id="dash-pane-reminders">
+          <div id="dash-reminders-list">
+            <!-- Populated dynamically -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         VIEW 6: ABOUT PAGE
+         ========================================================================== -->
+    <section class="view-section" id="view-about">
+      <div class="container" style="padding: 4rem 0 5rem 0;">
+        <div class="section-header">
+          <span class="section-tag">Project Overview</span>
+          <h2 class="section-title">About ScholarMatch</h2>
+          <p class="section-subtitle">
+            An intelligent, student-oriented platform designed to make finding education welfare schemes seamless and transparent.
+          </p>
+        </div>
+
+        <!-- Problem -> Solution -> Benefits Architecture Visual Layout -->
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-bottom: 3.5rem;">
+          <div class="feature-card" style="border-top: 4px solid var(--danger);">
+            <div class="feature-icon-box icon-amber">⚠️</div>
+            <h3>The Problem</h3>
+            <p>
+              Millions of deserving students miss out on scholarships worth crores of rupees every year because eligibility rules are fragmented across dozens of disconnected departmental websites and complex notifications.
+            </p>
+          </div>
+
+          <div class="feature-card" style="border-top: 4px solid var(--accent);">
+            <div class="feature-icon-box icon-blue">💡</div>
+            <h3>Our Solution</h3>
+            <p>
+              ScholarMatch acts as a single-window algorithmic matching engine that analyzes academic, income, social category, and domicile criteria to instantly calculate qualifying schemes with scored transparency.
+            </p>
+          </div>
+
+          <div class="feature-card" style="border-top: 4px solid var(--success);">
+            <div class="feature-icon-box icon-emerald">🎁</div>
+            <h3>The Impact</h3>
+            <p>
+              Students save dozens of hours, avoid filing disqualified applications, and receive step-by-step guidance on required documentation and official portal links.
+            </p>
+          </div>
+        </div>
+
+        <!-- System Architecture Breakdown -->
+        <div style="background: #ffffff; border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 2.5rem; box-shadow: var(--shadow-sm); margin-bottom: 3rem;">
+          <h3 style="font-size: 1.35rem; font-weight: 800; margin-bottom: 1rem; color: var(--text-main);">
+            Algorithmic Matching Engine &amp; Weighted Scoring Model
+          </h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">
+            The core eligibility module evaluates applicant profiles using a 5-factor weighted matrix totaling 100 points:
+          </p>
+
+          <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem; margin-bottom: 2rem;">
+            <div style="background: var(--bg); padding: 1rem; border-radius: var(--radius-md); text-align: center; border: 1px solid var(--border);">
+              <div style="font-size: 1.5rem; font-weight: 800; color: var(--accent);">25%</div>
+              <strong style="font-size: 0.85rem; display: block; margin-top: 4px;">Family Income</strong>
+              <span style="font-size: 0.75rem; color: var(--text-muted);">Max ceiling check</span>
+            </div>
+            <div style="background: var(--bg); padding: 1rem; border-radius: var(--radius-md); text-align: center; border: 1px solid var(--border);">
+              <div style="font-size: 1.5rem; font-weight: 800; color: var(--accent);">20%</div>
+              <strong style="font-size: 0.85rem; display: block; margin-top: 4px;">Social Category</strong>
+              <span style="font-size: 0.75rem; color: var(--text-muted);">SC/ST/OBC/Minority/Gen</span>
+            </div>
+            <div style="background: var(--bg); padding: 1rem; border-radius: var(--radius-md); text-align: center; border: 1px solid var(--border);">
+              <div style="font-size: 1.5rem; font-weight: 800; color: var(--accent);">20%</div>
+              <strong style="font-size: 0.85rem; display: block; margin-top: 4px;">Academic Marks</strong>
+              <span style="font-size: 0.75rem; color: var(--text-muted);">Cutoff &amp; Merit check</span>
+            </div>
+            <div style="background: var(--bg); padding: 1rem; border-radius: var(--radius-md); text-align: center; border: 1px solid var(--border);">
+              <div style="font-size: 1.5rem; font-weight: 800; color: var(--accent);">20%</div>
+              <strong style="font-size: 0.85rem; display: block; margin-top: 4px;">Education &amp; Course</strong>
+              <span style="font-size: 0.75rem; color: var(--text-muted);">UG, PG, Diploma, Degree</span>
+            </div>
+            <div style="background: var(--bg); padding: 1rem; border-radius: var(--radius-md); text-align: center; border: 1px solid var(--border);">
+              <div style="font-size: 1.5rem; font-weight: 800; color: var(--accent);">15%</div>
+              <strong style="font-size: 0.85rem; display: block; margin-top: 4px;">Domicile / State</strong>
+              <span style="font-size: 0.75rem; color: var(--text-muted);">Pan-India vs State Scheme</span>
+            </div>
+          </div>
+
+          <div style="background: var(--surface-alt); padding: 1.25rem 1.5rem; border-radius: var(--radius-md); border-left: 4px solid var(--success);">
+            <strong style="color: var(--text-main);">Classification Thresholds:</strong>
+            <ul style="margin-top: 0.5rem; padding-left: 1.2rem; font-size: 0.88rem; color: var(--text-muted); line-height: 1.6;">
+              <li><strong>Score &ge; 75%:</strong> <span style="color: var(--success-dark); font-weight: 700;">Eligible (🟢)</span> — Student meets all mandatory qualifying requirements.</li>
+              <li><strong>Score 50% &ndash; 74%:</strong> <span style="color: var(--warning-dark); font-weight: 700;">Potential Match (🟡)</span> — Near threshold with conditional relaxation or warnings shown.</li>
+              <li><strong>Score &lt; 50% or Hard Disqualification:</strong> <span style="color: var(--danger-dark); font-weight: 700;">Not Eligible (🔴)</span> — Specific disqualifying reasons displayed.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Engineering Viva & College Project Notes -->
+        <div style="background: #ffffff; border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 2rem; box-shadow: var(--shadow-sm);">
+          <h4 style="font-weight: 700; font-size: 1.1rem; margin-bottom: 0.5rem;">Academic Project Note (College Engineering Viva)</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">
+            This project is developed as a final-year engineering demonstration prototype. It features a fully decoupled frontend client and a RESTful backend API in Node.js / Python, operating over a localized JSON database schema engineered for effortless migration to MongoDB or PostgreSQL.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         VIEW 7: CONTACT & FAQ PAGE
+         ========================================================================== -->
+    <section class="view-section" id="view-contact">
+      <div class="container" style="padding: 4rem 0 5rem 0;">
+        <div class="section-header">
+          <span class="section-tag">Student Support Desk</span>
+          <h2 class="section-title">Contact &amp; Assistance</h2>
+          <p class="section-subtitle">Have a question regarding scheme criteria or experiencing technical issues? Send us a message.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: flex-start;">
+          <!-- Contact Form -->
+          <div style="background: #ffffff; border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 2.25rem; box-shadow: var(--shadow-sm);">
+            <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.5rem;">Submit an Inquiry</h3>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.5rem;">Our student counseling desk will review your inquiry.</p>
+
+            <form id="contact-form">
+              <div class="form-group" style="margin-bottom: 1rem;">
+                <label class="form-label" for="contact-name">Full Name <span class="req">*</span></label>
+                <input type="text" id="contact-name" class="form-control" placeholder="Enter your full name" required />
+              </div>
+
+              <div class="form-group" style="margin-bottom: 1rem;">
+                <label class="form-label" for="contact-email">Email Address <span class="req">*</span></label>
+                <input type="email" id="contact-email" class="form-control" placeholder="e.g. rahul@example.com" required />
+              </div>
+
+              <div class="form-group" style="margin-bottom: 1rem;">
+                <label class="form-label" for="contact-subject">Topic / Scheme Name</label>
+                <select id="contact-subject" class="form-control">
+                  <option value="General Query">General Query</option>
+                  <option value="Scheme Eligibility Clarification">Scheme Eligibility Clarification</option>
+                  <option value="Income / Caste Certificate Query">Income / Caste Certificate Query</option>
+                  <option value="Technical Bug Report">Technical Bug Report</option>
+                </select>
+              </div>
+
+              <div class="form-group" style="margin-bottom: 1.5rem;">
+                <label class="form-label" for="contact-message">Message <span class="req">*</span></label>
+                <textarea id="contact-message" class="form-control" rows="4" placeholder="How can we assist you with scholarship schemes?" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                Submit Inquiry Message
+              </button>
+            </form>
+          </div>
+
+          <!-- FAQ Accordion -->
+          <div>
+            <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 1.25rem;">Frequently Asked Questions</h3>
+
+            <div style="display: flex; flex-direction: column; gap: 1rem;">
+              <details style="background: #ffffff; border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1rem;" open>
+                <summary style="font-weight: 700; font-size: 0.95rem; cursor: pointer; color: var(--text-main);">
+                  What is an RD Number on certificates?
+                </summary>
+                <p style="margin-top: 0.5rem; font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">
+                  An RD (Revenue Department) number is an electronic 15-character barcode reference issued by the Revenue Department (e.g., Bhoomi or Nadakacheri in Karnataka, MahaDBT in Maharashtra) that allows online automated verification without physical paperwork.
+                </p>
+              </details>
+
+              <details style="background: #ffffff; border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1rem;">
+                <summary style="font-weight: 700; font-size: 0.95rem; cursor: pointer; color: var(--text-main);">
+                  Why is Aadhaar Bank Seeding (DBT) mandatory?
+                </summary>
+                <p style="margin-top: 0.5rem; font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">
+                  All central and state government scholarships disburse funds via Direct Benefit Transfer (DBT) through the NPCI Aadhaar payment bridge to ensure direct credit into the student's active bank account.
+                </p>
+              </details>
+
+              <details style="background: #ffffff; border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1rem;">
+                <summary style="font-weight: 700; font-size: 0.95rem; cursor: pointer; color: var(--text-main);">
+                  Can I apply for more than one scholarship?
+                </summary>
+                <p style="margin-top: 0.5rem; font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">
+                  As per Ministry regulations, a student can generally avail of only one government tuition fee scholarship at a time, though certain merit incentives or private CSR grants may be combined depending on scheme bylaws.
+                </p>
+              </details>
+
+              <details style="background: #ffffff; border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1rem;">
+                <summary style="font-weight: 700; font-size: 0.95rem; cursor: pointer; color: var(--text-main);">
+                  Is ScholarMatch an official government portal?
+                </summary>
+                <p style="margin-top: 0.5rem; font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">
+                  No, ScholarMatch is an independent academic informational decision support tool. It checks your criteria and guides you to verified official portals (NSP, SSP, AICTE) for actual submissions.
+                </p>
+              </details>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         VIEW 8: ADMIN DASHBOARD (SCHEME MANAGEMENT)
+         ========================================================================== -->
+    <section class="view-section" id="view-admin">
+      <div class="container" style="padding: 3.5rem 0 5rem 0;">
+        <div style="display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <span class="section-tag">Data Management Portal</span>
+            <h2 class="section-title">Scholarship Catalog Administration</h2>
+            <p class="section-subtitle">
+              Manage the scholarship repository: add, edit, delete, or reset schemes in the dataset.
+            </p>
+          </div>
+          <div style="display: flex; gap: 0.75rem;">
+            <button class="btn btn-secondary btn-sm" id="btn-admin-reset-demo">
+              🔄 Reset Demo Data
+            </button>
+            <button class="btn btn-primary btn-sm" id="btn-admin-add-scheme">
+              ➕ Add New Scheme
+            </button>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 1rem; font-size: 0.88rem; color: var(--text-muted);">
+          Total Schemes Loaded: <strong id="admin-total-schemes-count" style="color: var(--text-main);">0</strong>
+        </div>
+
+        <div class="admin-table-wrapper">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Scheme Name &amp; Provider</th>
+                <th>State / Domicile</th>
+                <th>Income Limit</th>
+                <th>Min %</th>
+                <th>Eligible Category &amp; Levels</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="admin-schemes-tbody">
+              <!-- Populated dynamically by admin.js -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ==========================================================================
+       MODAL 1: SCHOLARSHIP DETAILS DEEP-DIVE
+       ========================================================================== -->
+  <div class="modal-overlay" id="scheme-modal-overlay">
+    <div class="modal-window" role="dialog" aria-modal="true" aria-labelledby="modal-scheme-title">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <div class="modal-header-content">
+          <h3 id="modal-scheme-title">Scholarship Details</h3>
+          <p id="modal-scheme-provider">Provider Information</p>
+        </div>
+        <button class="modal-close-btn" id="scheme-modal-close" aria-label="Close modal">&times;</button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+        <!-- About Section -->
+        <div class="modal-section-block">
+          <h4 class="modal-section-title">📖 About the Scheme</h4>
+          <p id="modal-scheme-about" style="color: var(--text-main); font-size: 0.92rem;"></p>
+        </div>
+
+        <!-- Eligibility Criteria Breakdown -->
+        <div class="modal-section-block">
+          <h4 class="modal-section-title">🎯 Eligibility Criteria</h4>
+          <div id="modal-criteria-breakdown"></div>
+        </div>
+
+        <!-- Benefits Section -->
+        <div class="modal-section-block">
+          <h4 class="modal-section-title">🎁 Scheme Benefits &amp; Grant</h4>
+          <div id="modal-scheme-benefits"></div>
+        </div>
+
+        <!-- Required Documents Checklist -->
+        <div class="modal-section-block">
+          <h4 class="modal-section-title">☑️ Required Documents Checklist</h4>
+          <ul class="doc-checklist" id="modal-scheme-documents"></ul>
+        </div>
+
+        <!-- Application Process Step-by-Step -->
+        <div class="modal-section-block">
+          <h4 class="modal-section-title">📝 Step-by-Step Application Process</h4>
+          <ol class="process-steps-list" id="modal-scheme-steps"></ol>
+        </div>
+
+        <!-- External Link Notice -->
+        <div style="background: var(--surface-alt); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 0.85rem 1rem; font-size: 0.8rem; color: var(--text-muted); display: flex; align-items: center; gap: 0.5rem;">
+          <span>ℹ️</span>
+          <span>Official government portal links are provided for informational and reference purposes.</span>
+        </div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="modal-footer">
+        <button class="btn btn-secondary btn-sm" id="modal-print-btn">
+          🖨️ Print / Save Summary
+        </button>
+        <button class="btn btn-primary btn-sm" id="modal-apply-btn">
+          Apply on Official Website →
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ==========================================================================
+       MODAL 2: ADMIN ADD / EDIT SCHEME FORM
+       ========================================================================== -->
+  <div class="modal-overlay" id="admin-scheme-modal-overlay">
+    <div class="modal-window" style="max-width: 680px;" role="dialog">
+      <div class="modal-header">
+        <div class="modal-header-content">
+          <h3 id="admin-modal-title">Add / Edit Scholarship Scheme</h3>
+          <p>Dataset Administration</p>
+        </div>
+        <button class="modal-close-btn" id="admin-modal-close">&times;</button>
+      </div>
+
+      <form id="admin-scheme-form" style="display: flex; flex-direction: column; overflow-y: auto;">
+        <div class="modal-body">
+          <div class="form-grid">
+            <div class="form-group col-span-2">
+              <label class="form-label" for="admin-field-name">Scheme Title <span class="req">*</span></label>
+              <input type="text" id="admin-field-name" class="form-control" required />
+            </div>
+
+            <div class="form-group col-span-2">
+              <label class="form-label" for="admin-field-provider">Issuing Ministry / Department <span class="req">*</span></label>
+              <input type="text" id="admin-field-provider" class="form-control" required />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="admin-field-state">State / Domicile</label>
+              <input type="text" id="admin-field-state" class="form-control" placeholder="All India, or State Name" />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="admin-field-max-income">Max Family Income (₹)</label>
+              <input type="number" id="admin-field-max-income" class="form-control" placeholder="e.g. 250000" />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="admin-field-min-percentage">Min Marks Percentage (%)</label>
+              <input type="number" id="admin-field-min-percentage" class="form-control" placeholder="e.g. 60" />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="admin-field-benefit-amount">Benefit Amount Value (₹)</label>
+              <input type="number" id="admin-field-benefit-amount" class="form-control" placeholder="e.g. 50000" />
+            </div>
+
+            <div class="form-group col-span-2">
+              <label class="form-label" for="admin-field-categories">Eligible Categories (comma separated)</label>
+              <input type="text" id="admin-field-categories" class="form-control" placeholder="General, OBC, SC, ST, Other" />
+            </div>
+
+            <div class="form-group col-span-2">
+              <label class="form-label" for="admin-field-education-levels">Eligible Education Levels (comma separated)</label>
+              <input type="text" id="admin-field-education-levels" class="form-control" placeholder="PUC / 12th, Diploma, Undergraduate, Postgraduate" />
+            </div>
+
+            <div class="form-group col-span-2">
+              <label class="form-label" for="admin-field-benefits">Benefits Description</label>
+              <input type="text" id="admin-field-benefits" class="form-control" placeholder="e.g. Full tuition reimbursement + monthly stipend" />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="admin-field-deadline">Application Deadline</label>
+              <input type="date" id="admin-field-deadline" class="form-control" />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="admin-field-official-url">Portal Reference URL</label>
+              <input type="text" id="admin-field-official-url" class="form-control" placeholder="https://scholarships.gov.in (Demo)" />
+            </div>
+
+            <div class="form-group col-span-2">
+              <label class="form-label" for="admin-field-description">Scheme Description</label>
+              <textarea id="admin-field-description" class="form-control" rows="3"></textarea>
+            </div>
+
+            <div class="form-group col-span-2">
+              <label class="form-label" for="admin-field-required-docs">Required Documents (one per line)</label>
+              <textarea id="admin-field-required-docs" class="form-control" rows="3" placeholder="Income Certificate&#10;Caste Certificate&#10;Aadhaar Card&#10;Marks Card"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-sm" id="admin-form-cancel">Cancel</button>
+          <button type="submit" class="btn btn-primary btn-sm">Save Scheme to Dataset</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- ==========================================================================
+       FOOTER & STATUTORY DISCLAIMER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <!-- Mandatory Statutory Disclaimer (Section 19) -->
+      <div class="disclaimer-box">
+        <strong>⚠️ Statutory Disclaimer:</strong>
+        ScholarMatch is an informational decision support tool. Eligibility results are indicative and calculated based on user-provided profile parameters. All criteria and guidelines should be verified with the official scholarship or government portal before submitting actual applications.
+      </div>
+
+      <div class="footer-grid">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-col">
+          <div style="margin-bottom: 1rem;">
+            <img src="assets/logo.svg" alt="ScholarMatch" style="height: 38px; filter: brightness(0) invert(1);" />
+          </div>
+          <p style="font-size: 0.88rem; line-height: 1.6; color: #94a3b8; margin-bottom: 1rem;">
+            Find the scholarships and government welfare schemes you are eligible for. Transparent, fast, and student-focused.
+          </p>
+          <span style="font-size: 0.78rem; color: #64748b;">College Engineering Final-Year Project</span>
+        </div>
+
+        <!-- Col 2: Navigation -->
+        <div class="footer-col">
+          <h4>Portal Navigation</h4>
+          <ul>
+            <li><a href="#home" data-navigate="home">Home</a></li>
+            <li><a href="#checker" data-navigate="checker">Check Eligibility</a></li>
+            <li><a href="#scholarships" data-navigate="scholarships">Scholarships Catalog</a></li>
+            <li><a href="#dashboard" data-navigate="dashboard">Student Dashboard</a></li>
+            <li><a href="#admin" data-navigate="admin">Admin Scheme Manager</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Key Schemes -->
+        <div class="footer-col">
+          <h4>Key Welfare Categories</h4>
+          <ul>
+            <li><a href="#scholarships" data-navigate="scholarships">Central Sector Scheme</a></li>
+            <li><a href="#scholarships" data-navigate="scholarships">Post-Matric SC/ST Welfare</a></li>
+            <li><a href="#scholarships" data-navigate="scholarships">State OBC Concessions</a></li>
+            <li><a href="#scholarships" data-navigate="scholarships">AICTE Pragati (Girls)</a></li>
+            <li><a href="#scholarships" data-navigate="scholarships">Minority Scholarships</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Project & Support -->
+        <div class="footer-col">
+          <h4>Engineering Project</h4>
+          <ul>
+            <li><a href="#about" data-navigate="about">System Architecture</a></li>
+            <li><a href="#about" data-navigate="about">Rule Engine Scoring Logic</a></li>
+            <li><a href="#contact" data-navigate="contact">Student Help Desk</a></li>
+            <li><a href="#contact" data-navigate="contact">Frequently Asked Questions</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 ScholarMatch. All rights reserved. Open for academic demonstration.
+        </div>
+        <div>
+          Designed for College Engineering Evaluation &amp; Demonstration
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- JavaScript Modules -->
+  <!-- 1. Offline fallback dataset -->
+  <script src="js/schemes-data.js"></script>
+  <!-- 2. Core Eligibility Engine -->
+  <script src="js/eligibility-engine.js"></script>
+  <!-- 3. API & Storage Service -->
+  <script src="js/api.js"></script>
+  <!-- 4. Form Wizard Controller -->
+  <script src="js/form-wizard.js"></script>
+  <!-- 5. Student Dashboard Controller -->
+  <script src="js/dashboard.js"></script>
+  <!-- 6. Admin Controller -->
+  <script src="js/admin.js"></script>
+  <!-- 7. Main Application Router & Controller -->
+  <script src="js/app.js"></script>
+
+  <!-- Initialization Bootstrap -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Initialize modules
+      window.FormWizard.init();
+      window.StudentDashboard.init();
+      window.AdminController.init();
+      window.App.init();
+    });
+  </script>
+</body>
+</html>

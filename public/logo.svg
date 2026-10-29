@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 64" fill="none">
+  <!-- Crest Icon -->
+  <g transform="translate(4, 4)">
+    <rect width="56" height="56" rx="14" fill="url(#crestGrad)" />
+    <!-- Graduation Cap -->
+    <path d="M28 15L11 24L28 33L45 24L28 15Z" fill="#FFFFFF"/>
+    <path d="M17 28.5V36C17 39.5 21.9 42.5 28 42.5C34.1 42.5 39 39.5 39 36V28.5L28 34.5L17 28.5Z" fill="#E2E8F0" opacity="0.95"/>
+    <path d="M43 25.5V38.5C43 39.5 41.5 40.5 41 40.5C40.5 40.5 39 39.5 39 38.5V27.5L43 25.5Z" fill="#FBBF24"/>
+    <circle cx="41" cy="41" r="2.5" fill="#F59E0B"/>
+    <!-- Checkmark Badge in Corner -->
+    <circle cx="43" cy="43" r="8" fill="#10B981" stroke="#FFFFFF" stroke-width="2"/>
+    <path d="M40 43L42 45L46 41" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Typography -->
+  <text x="72" y="34" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, sans-serif" font-weight="800" font-size="24" fill="#0F172A" letter-spacing="-0.5">
+    Scholar<tspan fill="#2563EB">Match</tspan>
+  </text>
+  <text x="73" y="49" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, sans-serif" font-weight="500" font-size="10.5" fill="#64748B" letter-spacing="0.2">
+    SCHOLARSHIP &amp; SCHEME FINDER
+  </text>
+
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="crestGrad" x1="0" y1="0" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1E40AF"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+  </defs>
+</svg>
